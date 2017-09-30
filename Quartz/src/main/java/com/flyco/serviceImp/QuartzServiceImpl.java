@@ -199,7 +199,7 @@ public class QuartzServiceImpl implements QuartzService{
 	@Override
 	public void pauseJob(String jobName, String jobGroupName) {
 		try {
-			quartzScheduler.pauseJob( JobKey.jobKey(jobName, jobGroupName));
+			quartzScheduler.pauseJob(JobKey.jobKey(jobName, jobGroupName));
 		} catch (SchedulerException e) {
 			e.printStackTrace();
 		}
