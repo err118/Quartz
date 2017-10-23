@@ -33,10 +33,11 @@
 		<plugin.maven-surefire>2.18.1</plugin.maven-surefire>
 		<skipTests>true</skipTests>
 		<spring.version>4.0.2.RELEASE</spring.version>
-		<quartz.version>2.3.0</quartz.version>
+		<quartz.version>2.2.1</quartz.version>
 		<servlet.version>3.1.0</servlet.version>
 		<!-- mysql版本号 -->
 		<mysql.connector.version>5.1.30</mysql.connector.version>
+		<mybatis.version>3.2.1</mybatis.version>
 	</properties>
 	<dependencies>
 		<!--spring -->
@@ -128,12 +129,6 @@
 			<artifactId>jackson-core</artifactId>
 			<version>2.7.4</version>
 		</dependency>
-		<!-- fastjson -->
-		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>fastjson</artifactId>
-			<version>1.2.31</version>
-		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -147,5 +142,31 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>${mysql.connector.version}</version>
 		</dependency>
+			<!-- alibaba data source 相关jar包-->
+     <dependency>
+         <groupId>com.alibaba</groupId>
+         <artifactId>druid</artifactId>
+         <version>0.2.23</version>
+     </dependency>
+     
+     <!-- alibaba fastjson 格式化对 -->  
+        <dependency>  
+            <groupId>com.alibaba</groupId>  
+            <artifactId>fastjson</artifactId>  
+            <version>1.1.41</version>  
+        </dependency> 
+        	<!--mybatis依赖 -->
+	<dependency>
+		<groupId>org.mybatis</groupId>
+		<artifactId>mybatis</artifactId>
+		<version>${mybatis.version}</version>
+	</dependency>
+
+	<!-- mybatis/spring包 -->
+	<dependency>
+		<groupId>org.mybatis</groupId>
+		<artifactId>mybatis-spring</artifactId>
+		<version>1.2.0</version>
+	</dependency>
 	</dependencies>
 </project>
